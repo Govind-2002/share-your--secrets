@@ -1,0 +1,174 @@
+/* styles.css */
+
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+button, .btn {
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 1rem;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #f7c14d;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-color: #282c34;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.jumbotron .lead {
+  font-size: 1.25rem;
+}
+
+.jumbotron .btn {
+  margin: 1rem 0.5rem;
+}
+
+.jumbotron .btn-light {
+  color: #282c34;
+}
+
+.jumbotron .btn-dark {
+  color: #fff;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+/* Forms */
+form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #f7c14d;
+  box-shadow: 0 0 0 0.2rem rgba(247, 193, 77, 0.25);
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #23272b;
+}
+
+.btn-light {
+  background-color: #f7c14d;
+  color: #fff;
+}
+
+.btn-light:hover {
+  background-color: #e0b24a;
+}
+
+/* Secrets */
+.secret-text {
+  font-size: 1.5rem;
+  color: #444;
+  margin: 2rem 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
